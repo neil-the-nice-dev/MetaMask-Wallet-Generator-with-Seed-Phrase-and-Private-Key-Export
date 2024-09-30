@@ -3,7 +3,7 @@ from datetime import datetime
 from bip_utils import Bip39MnemonicGenerator, Bip39SeedGenerator, Bip44, Bip44Coins, Bip44Changes
 
 #----------------------------------------------------------------
-#important ici le NB de wallet à creer
+
 
 
 number_of_wallets = 5 
@@ -50,8 +50,6 @@ def generate_wallet_dataframe(number_of_wallets=2):
     df = pd.DataFrame(wallet_list)
     
     return df
-
-number_of_wallets = 5  
 wallet_df = generate_wallet_dataframe(number_of_wallets)
 print(wallet_df)
 
